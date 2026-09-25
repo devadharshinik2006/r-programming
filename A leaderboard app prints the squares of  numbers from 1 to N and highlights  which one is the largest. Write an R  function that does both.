@@ -1,0 +1,19 @@
+# Function to print squares and find the largest square
+
+square_numbers <- function(n) {
+  
+  squares <- c()
+  
+  for (i in 1:n) {
+    square <- i^2
+    squares <- c(squares, square)
+    print(paste("Square of", i, "=", square))
+  }
+  
+  largest <- max(squares)
+  
+  print(paste("Largest square is:", largest))
+}
+
+# Call the function
+square_numbers(5)
