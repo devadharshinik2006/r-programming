@@ -1,0 +1,23 @@
+# Create student data
+student_data <- data.frame(
+  name = c("deva", "divya", "Soumya"),
+  marks = c(40, 80, 90)
+)
+
+# Write data to CSV file
+write.csv(student_data, "Student-data.csv", row.names = FALSE)
+
+cat("CSV file created successfully\n")
+
+# Read CSV file
+data <- read.csv("Student-data.csv")
+
+# Display boxplot
+boxplot(
+  data$marks,
+  names.arg = data$name,
+  col = "purple",
+  main = "Student marks",
+  xlab = "name",
+  ylab = "marks"
+)
