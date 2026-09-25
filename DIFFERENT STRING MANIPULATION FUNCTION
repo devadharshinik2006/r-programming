@@ -1,0 +1,33 @@
+name <- "Devadharshini"
+text <- "R Programming"
+
+# Number of characters
+print(nchar(name))
+
+# Convert to uppercase
+print(toupper(name))
+
+# Convert to lowercase
+print(tolower(name))
+
+# Join strings using paste()
+print(paste("R", "Programming"))
+
+# Join strings using paste0()
+print(paste0("R", "Programming"))
+
+# Extract characters using substr()
+print(substr(name, 1, 5))
+
+# Extract characters using substring()
+print(substring(name, 1, 5))
+
+# Split a string
+print(strsplit(text, " "))
+
+# Replace characters
+print(chartr("a", "A", name))
+
+# Remove leading and trailing spaces
+message <- "   Hello R   "
+print(trimws(message))
