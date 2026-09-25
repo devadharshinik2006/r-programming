@@ -1,0 +1,13 @@
+data <- read.csv("placement.csv")
+
+# Calculate average package
+average <- mean(data$Package)
+
+# Display average package
+print(paste("Average Package:", average, "LPA"))
+
+# Find students above average
+above_average <- subset(data, Package > average)
+
+print("Students placed above average:")
+print(above_average)
