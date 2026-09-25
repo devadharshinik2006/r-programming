@@ -1,0 +1,25 @@
+# Creating a data frame
+student <- data.frame(
+  Name = c("Arun", "Bala", "Devi"),
+  Age = c(20, 21, 20)
+)
+
+# Adding a new column using cbind()
+Marks <- c(85, 90, 88)
+
+result1 <- cbind(student, Marks)
+
+print("After joining columns:")
+print(result1)
+
+# Creating another data frame
+student2 <- data.frame(
+  Name = c("Kumar", "Priya"),
+  Age = c(22, 21)
+)
+
+# Adding new rows using rbind()
+result2 <- rbind(student, student2)
+
+print("After joining rows:")
+print(result2)
