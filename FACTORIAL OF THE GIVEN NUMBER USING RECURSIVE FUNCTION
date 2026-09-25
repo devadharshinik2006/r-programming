@@ -1,0 +1,15 @@
+factorial <- function(n) {
+  if (n == 0) {
+    return(1)
+  } else {
+    return(n * factorial(n - 1))
+  }
+}
+
+# Given number
+n <- 5
+
+# Calculate factorial
+result <- factorial(n)
+
+print(paste("Factorial of", n, "is", result))
