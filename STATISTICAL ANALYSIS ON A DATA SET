@@ -1,0 +1,47 @@
+# Create a data set
+marks <- c(65, 70, 75, 80, 85, 90, 95)
+
+# Display the data
+print("Data:")
+print(marks)
+
+# Mean
+print("Mean:")
+print(mean(marks))
+
+# Median
+print("Median:")
+print(median(marks))
+
+# Mode
+print("Mode:")
+print(names(sort(table(marks), decreasing = TRUE)[1]))
+
+# Minimum
+print("Minimum:")
+print(min(marks))
+
+# Maximum
+print("Maximum:")
+print(max(marks))
+
+# Range
+print("Range:")
+print(range(marks))
+
+# Variance
+print("Variance:")
+print(var(marks))
+
+# Standard Deviation
+print("Standard Deviation:")
+print(sd(marks))
+
+# Summary of the data
+print("Statistical Summary:")
+print(summary(marks))
+
+# Boxplot
+boxplot(marks,
+        main = "Statistical Analysis of Marks",
+        ylab = "Marks")
