@@ -1,0 +1,12 @@
+# Read milk collection data from CSV file
+data <- read.csv("milk.csv")
+
+# Calculate total collection
+total <- sum(data$Milk)
+
+# Calculate average collection
+average <- mean(data$Milk)
+
+# Display results
+print(paste("Total Milk Collection:", total, "litres"))
+print(paste("Average Milk Collection:", average, "litres"))
